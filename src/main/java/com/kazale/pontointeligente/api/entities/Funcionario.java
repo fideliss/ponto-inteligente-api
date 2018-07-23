@@ -30,7 +30,7 @@ public class Funcionario implements Serializable {
 	private static final long serialVersionUID = -3807086309697776307L;
 	
 	private Long id;
-	private String name;
+	private String nome;
 	private String email;
 	private String senha;
 	private String cpf;
@@ -56,13 +56,13 @@ public class Funcionario implements Serializable {
 		this.id = id;
 	}
 
-	@Column(name = "name", nullable = false)
-	public String getName() {
-		return name;
+	@Column(name = "nome", nullable = false)
+	public String getNome() {
+		return nome;
 	}
 
-	public void setName(String name) {
-		this.name = name;
+	public void setNome(String nome) {
+		this.nome = nome;
 	}
 
 	@Column(name = "email", nullable = false)
@@ -194,7 +194,7 @@ public class Funcionario implements Serializable {
 
 	@Override
 	public String toString() {
-		return "Funcionario [id=" + id + ", name=" + name + ", email=" + email + ", senha=" + senha + ", cpf=" + cpf
+		return "Funcionario [id=" + id + ", name=" + nome + ", email=" + email + ", senha=" + senha + ", cpf=" + cpf
 				+ ", valorHora=" + valorHora + ", qtdHorasTrabalhoDia=" + qtdHorasTrabalhoDia + ", qtdHorasAlmoco="
 				+ qtdHorasAlmoco + ", perfil=" + perfil + ", dataCriacao=" + dataCriacao + ", dataAtualizacao="
 				+ dataAtualizacao + ", empresa=" + empresa + "]";
