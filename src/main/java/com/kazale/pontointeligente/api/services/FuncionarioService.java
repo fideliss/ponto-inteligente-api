@@ -36,6 +36,6 @@ public interface FuncionarioService {
 	 * @param id
 	 * @return Optional<Funcionario>
 	 */
-	Optional<Funcionario> buscaPorId(Long id);
+	Optional<Funcionario> buscarPorId(Long id);
 
 }
